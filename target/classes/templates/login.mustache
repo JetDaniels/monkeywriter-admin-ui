@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Admin-UI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <form class="login-form" action="/login" method="POST" onsubmit="
+                if (this.username.value === '' || this.password.value === '')
+                {alert('Заполните все поля'); return false;}
+                ">
+        <div class="form-group">
+            <label for="username" class="form-label">Логин</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+</body>
+</html>
